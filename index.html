@@ -3,9 +3,7 @@
  <head><title>SpendWise</title></head>
  <body>
  <script>
-   // Forward all query params to the native app
-   var params = window.location.search;
-   window.location.href = "spendwise://bank-callback" + params;
+   window.location.href = "spendwise://bank-callback" + window.location.search;
  </script>
  <p>Reindirizzamento a SpendWise...</p>
  </body>
